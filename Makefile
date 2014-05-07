@@ -9,9 +9,9 @@ LIBC_INCLUDE=/usr/include
 # Libraries    库
 ADDLIB=
 # Linker flags  链接器标志
-LDFLAG_STATIC=-Wl,-Bstatic  静态    
-LDFLAG_DYNAMIC=-Wl,-Bdynamic  动态
-LDFLAG_CAP=-lcap
+LDFLAG_STATIC=-Wl,-Bstatic   #Wl选项告诉编译器将后面的参数传递给链接器，对接下来的-l选项使用静态链接
+LDFLAG_DYNAMIC=-Wl,-Bdynamic  #-l使用动态链接
+LDFLAG_CAP=-lcap   #指定加载库, 告诉连接器从哪里寻找库文件
 LDFLAG_GNUTLS=-lgnutls-openssl
 LDFLAG_CRYPTO=-lcrypto
 LDFLAG_IDN=-lidn
@@ -19,7 +19,7 @@ LDFLAG_RESOLV=-lresolv
 LDFLAG_SYSFS=-lsysfs
 
 #
-# Options
+# Options  设置
 #
 
 # Capability support (with libcap) [yes|static|no]

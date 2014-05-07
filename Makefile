@@ -2,15 +2,15 @@
 # Configuration
 #
 
-# CC
+# CC  自定义CC指定gcc程序
 CC=gcc
-# Path to parent kernel include files directory
+# Path to parent kernel include files directory     内核路径包含文件的目录
 LIBC_INCLUDE=/usr/include
-# Libraries
+# Libraries    库
 ADDLIB=
-# Linker flags
-LDFLAG_STATIC=-Wl,-Bstatic
-LDFLAG_DYNAMIC=-Wl,-Bdynamic
+# Linker flags  链接器标志
+LDFLAG_STATIC=-Wl,-Bstatic  静态    
+LDFLAG_DYNAMIC=-Wl,-Bdynamic  动态
 LDFLAG_CAP=-lcap
 LDFLAG_GNUTLS=-lgnutls-openssl
 LDFLAG_CRYPTO=-lcrypto

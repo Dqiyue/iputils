@@ -1,6 +1,5 @@
 #Configuration
 #
-
 #CC
 #指定gcc程序
 CC=gcc
